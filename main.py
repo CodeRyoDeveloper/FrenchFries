@@ -1,4 +1,5 @@
 import discord
+import json
 
 """ 
 coderyo-discord-bot 是 CodeRyo 團隊應用於官方 Discord 上的綜合型客服機器人，
