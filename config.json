@@ -1,0 +1,4 @@
+{
+    "discord_bot_token":"這邊是輸入Discord機器人TOKEN的欄位",
+    "discord_channel_id":"如果要限定只在單一頻道輸入指令可以在這個欄位輸入頻道ID"
+}
