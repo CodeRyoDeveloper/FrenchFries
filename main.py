@@ -38,7 +38,10 @@ async def on_member_join(member):
     await member.add_roles(role)
     #發送歡迎訊息
     channel = discord.utils.get(member.guild.channels, id=962354694997540935)
-    await channel.send(f"{member.mention} 剛剛加入了【CodeRyoᶠʳⁱᵉˢ🍟碼凌薯】，讓我們歡迎他！")
+    await channel.send(f"{member.mention} 剛剛加入了【CodeRyoᶠʳⁱᵉˢ🍟碼凌薯】！")
 
 # Discord 機器人 TOKEN
-bot.run(token)
+try:
+    bot.run(token)
+except discord.LoginFailure:
+    print("Discord Bot Token 錯誤！")
