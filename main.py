@@ -12,11 +12,15 @@ intents=discord.Intents().all()     # 獲取所有的 Intents 對象
 intents.message_content = True      # 允許讀取消息內容
 intents.members = True              # 允許讀取成員資料
 
-# 讀取 config.json 的設定檔案
-with open("config.json") as f:
-    config=json.load(f)
-    token=config['discord_bot_token']
-    channelID=int(config['discord_channel_id'])
+try:
+    # 讀取 config.json 的設定檔案
+    with open("config.json") as f:
+        config=json.load(f)
+        token=config['discord_bot_token']
+        channelID=int(config['discord_channel_id'])
+except FileNotFoundError:
+    print('找不到 config.json 檔案')
+
     
 # Discord 機器人變數設置
 bot = discord.Client(intents=intents)
