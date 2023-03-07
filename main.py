@@ -20,7 +20,8 @@ try:
         channelID=int(config['discord_channel_id'])
 except FileNotFoundError:
     print('找不到 config.json 檔案')
-
+except KeyError:
+    print('config.json 檔案格式不正確')
     
 # Discord 機器人變數設置
 bot = discord.Client(intents=intents)
