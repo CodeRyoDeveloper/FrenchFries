@@ -24,7 +24,31 @@ pip install discord
 ```
 python -m ensurepip --upgrade
 ```
-
+  
+---
+  
+資料夾路徑：  
+```markdown
+coderyo-discord-bot/
+  |- __init__.py
+  |- client.py
+  |- commands/
+       |- __init__.py
+       |- test1.py
+       |- test2.py
+       |- test3.py
+  |- config.json
+.github/
+  |- workflows/
+       |- deploy.yml
+example/
+  |- example.py
+LICENSE
+README.md
+.gitignore
+main.py
+```
+  
 ---
 
 如果您有任何問題歡迎向 CodeRyo 團隊聯繫，您可以透過以下電子郵件發送您的提問或於此 repo 發佈 issue。  
