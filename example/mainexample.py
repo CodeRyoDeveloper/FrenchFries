@@ -4,10 +4,6 @@ import json
 from email import message
 from discord.utils import get
 
-""" 
-coderyo-discord-bot 是 CodeRyo 團隊應用於官方 Discord 上的綜合型客服機器人，
-"""
-
 intents=discord.Intents().all()     # 獲取所有的 Intents 對象
 intents.message_content = True      # 允許讀取消息內容
 intents.members = True              # 允許讀取成員資料
